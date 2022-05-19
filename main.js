@@ -244,11 +244,13 @@ class Accuweather extends utils.Adapter {
 		if (typeof this.forecast !== "undefined") {
 			const loc = this.config.loKey;
 			const lang = this.config.language;
+			const metric = this.config.metric;
+
 			this.forecast
 				.localkey(loc)
 				.timeInt("daily/5day")
 				.language(lang)
-				.metric(true)
+				.metric(metric)
 				.details(true)
 				.get()
 				.then(res => {
@@ -264,11 +266,13 @@ class Accuweather extends utils.Adapter {
 		if (typeof this.forecast !== "undefined") {
 			const loc = this.config.loKey;
 			const lang = this.config.language;
+			const metric = this.config.metric;
+
 			this.forecast
 				.localkey(loc)
 				.timeInt("hourly/12hour")
 				.language(lang)
-				.metric(true)
+				.metric(metric)
 				.details(true)
 				.get()
 				.then(res => {
@@ -284,12 +288,13 @@ class Accuweather extends utils.Adapter {
 		if (typeof this.forecast !== "undefined") {
 			const loc = this.config.loKey;
 			const lang = this.config.language;
+			const metric = this.config.metric;
 
 			this.forecast
 				.localkey(loc)
 				.timeInt()
 				.language(lang)
-				.metric(true)
+				.metric(metric)
 				.details(true)
 				.getCurrent()
 				.then(res => {
@@ -315,7 +320,7 @@ class Accuweather extends utils.Adapter {
 		nextHour.createDailyForecastObjects(this);
 		nextHour.createSummaryObjects(this);
 
-		this.log.debug(`API: ${this.config.apiKey}; Loc: ${this.config.loKey} Lang: ${this.config.language}`);
+		this.log.debug(`API: ${this.config.apiKey}; Loc: ${this.config.loKey} Lang: ${this.config.language} Metric: ${this.config.metric}`);
 
 		if (this.config.apiKey) {
 			this.forecast = new AccuAPI(this.config.apiKey);

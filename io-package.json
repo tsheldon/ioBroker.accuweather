@@ -218,7 +218,8 @@
     "native": {
         "apiKey": "",
         "loKey": "",
-        "language": "en-us"
+        "language": "en-us",
+        "metric": true
     },
     "objects": [],
     "instanceObjects": []
