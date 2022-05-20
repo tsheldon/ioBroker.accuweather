@@ -219,7 +219,7 @@
         "apiKey": "",
         "loKey": "",
         "language": "en-us",
-        "metric": true
+        "metric": "true"
     },
     "objects": [],
     "instanceObjects": []
