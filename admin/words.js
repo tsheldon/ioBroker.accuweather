@@ -51,7 +51,7 @@ systemDictionary = {
 		"zh-cn": "语言"
 	},
 	"metric": {
-		"en": "Use metric units?"
+		"en": "Units"
 	},
 	"api_help": {
 		"en": "To get API Key, register on https://developer.accuweather.com/ and create application in \"My Apps\" menu",
@@ -64,9 +64,6 @@ systemDictionary = {
 		"es": "Para obtener la clave API, regístrese en https://developer.accuweather.com/ y cree una aplicación en el menú \"Mis aplicaciones\"",
 		"pl": "Aby uzyskać klucz API, zarejestruj się na https://developer.accuweather.com/ i utwórz aplikację w menu „Moje aplikacje”",
 		"zh-cn": "要获取API密钥，请在https://developer.accuweather.com/上注册，然后在“我的应用程序”菜单中创建应用程序"
-	},
-	"metric_help": {
-		"en": "Use metric units when enabled, otherwise imperial units will be used"
 	},
 	"REGISTER": {
 		"en": "REGISTER",
